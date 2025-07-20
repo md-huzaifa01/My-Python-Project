@@ -1,3 +1,5 @@
+![MasterHead](Project Banner.jpg).
+Project Banner.jpg
 # 🐍 Python Projects Collection
 
 Welcome to my collection of Python projects! This repository serves as a showcase of my work and learning journey in Python programming, covering everything from basic programs to more complex applications.
