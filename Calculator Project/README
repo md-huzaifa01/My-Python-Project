@@ -1,1 +1,19 @@
+# 🧮 Python Calculator
 
+A simple command-line calculator built using Python. This project supports basic arithmetic operations 
+and serves as a great starting point for beginners learning functions, user input, and conditionals in Python.
+
+## 🚀 Features
+
+- Addition
+- Subtraction
+- Multiplication
+- Division (with zero division handling)
+
+## 💻 How to Use
+
+1. Make sure you have Python 3 installed on your computer.
+2. Clone the repository or download the `.py` file:
+   ```bash
+   git clone https://github.com/your-username/calculator.git
+   cd calculator
