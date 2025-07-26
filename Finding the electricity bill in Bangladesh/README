@@ -55,9 +55,11 @@ For example, if the units used are:
 - Realistic tiered pricing inspired by the Bangladeshi electricity system.
 - Automatic conversion to USD.
 - Easy to customize and extend.
+- I will add how many units what you do, I will make another based on this project, which is related to a physics equation.
 
 ## 🚀 How to Use
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/electricity-bill-calculator.git
+
