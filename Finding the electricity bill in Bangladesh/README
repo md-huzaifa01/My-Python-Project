@@ -1,1 +1,63 @@
+# ⚡ Electricity Bill Calculator – Bangladesh Unit-Based System
 
+This project calculates electricity bills in Bangladeshi Taka (৳) and converts the final bill amount to USD ($), based on the unit of electricity used. 
+It simulates a simplified version of the Bangladeshi electricity billing system with various conditions and charges applied based on unit thresholds.
+
+## 🔢 How the Calculation Works
+
+The billing is based on a tiered system:
+
+### 1. **Units ≤ 50**
+- Charged at **৳25 per unit**.
+- No meter fee or extra charges applied.
+
+### 2. **Units ≤ 100**
+- First 50 units ignored.
+- Remaining units (i.e., `units - 50`) charged at **৳3.50 per unit**.
+- **Meter Fee**: ৳150  
+- Additional Charge: ৳50
+
+### 3. **Units = 200
+- First 100 units ignored.
+- Remaining units (i.e., `units - 100`) charged at **৳3.00 per unit**.
+- Additional Charges:
+  - Meter Fee: ৳75
+  - Extra Fee: ৳162.50
+
+### 4. **Units > 200**
+- First 200 units ignored.
+- Remaining units (i.e., `units - 200`) charged at **৳5.00 per unit**.
+- Additional Charges:
+  - Meter Fee: ৳150
+  - Fee 1: ৳162.50
+  - **Bangladeshi System Base Fee**: ৳526
+  - Final Charge: ৳100
+
+### 🔁 Currency Conversion
+At the end, the total amount in Bangladeshi Taka is converted to USD based on a predefined exchange rate (you can customize this in the code).
+
+## 🧮 Example Calculation
+
+For example, if the units used are:
+
+- `45` → 45 × 25 = ৳1125 → Converted to USD
+- `100` → (100 - 50) × 3.5 + 150 + 50 = ৳375 + 200 = ৳575 → Converted to USD
+- `200` → (200 - 100) × 3.0 + 75 + 162.5 = ৳300 + 237.5 = ৳537.5 → Converted to USD
+- `250` → (250 - 200) × 5.0 + 150 + 162.5 + 526 + 100 = ৳250 + 938.5 = ৳1188.5 → Converted to USD
+
+## 📁 Files
+
+- `main.py` – Contains the logic for bill calculation and conversion.
+
+## ✅ Features
+
+- Dynamic unit-based calculation.
+- Realistic tiered pricing inspired by the Bangladeshi electricity system.
+- Automatic conversion to USD.
+- Easy to customize and extend.
+
+## 🚀 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/electricity-bill-calculator.git
